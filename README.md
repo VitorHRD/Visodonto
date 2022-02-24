@@ -4,7 +4,7 @@
 
 
 <h2 color="blue" align="center">
-<a href="https://VitorHRD.github.io/Visodonto/">🔗 Site</a>
+<a href="https://VitorHRD.github.io/visodonto/">🔗 Site</a>
 </h2>
 
 <h1>🚀 Tecnologias</h1>

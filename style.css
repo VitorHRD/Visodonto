@@ -139,11 +139,9 @@ li:hover{
     display: grid;
     grid-template: 1fr /1fr 1fr 1fr;
     position: fixed;
-    top: 90vh;
-    left: 10px;
-    height: 0;
-    width:0;
-   z-index: 99999;
+    left: 5px;
+    bottom: 3px;
+    z-index: 99999;
 }
 .media{
     width: 65px;
@@ -277,6 +275,7 @@ h3{
     background-color: #0099ff;
     color: white;
     margin: 0;
+    padding-bottom: 60px;
 }
 #link-footer{
     color: rgb(158, 20, 147);
@@ -328,12 +327,6 @@ input[type=number] {
    appearance: textfield;
 
 }
-
-@media (max-width:1400px){
-    #social-media{
-        top:89vh;
-    }
-}
 @media (max-width:900px){
     body{
         overflow-x: hidden;
@@ -376,9 +369,8 @@ input[type=number] {
         padding-bottom:40px;
     }
     #social-media{
+        bottom: 3px;
         left: 5px;
-        top:92.5%;
-        bottom: 0;
     }
     .services{
         border-top:rgba(255, 255, 255, 0.644) solid 0.4px;

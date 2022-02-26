@@ -10,18 +10,19 @@ class MobileNavbar{
     animateLinks(){
         this.navLinks.forEach((link , index)=>{
             link.style.animation 
-            ?(link.style.animation = "")
+            ?(link.style.animation = ""
+            )
             :(link.style.animation =`navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
-
-        });
+        })
     }
+
     handleClick(){
      this.navList.classList.toggle(this.activeClass);
      this.mobileMenu.classList.toggle(this.activeClass);
+
      this.animateLinks();
 
     }
-    
 
 addClickEvent(){
     this.mobileMenu.addEventListener("click", this.handleClick);
@@ -39,3 +40,17 @@ const mobileNavbar = new MobileNavbar(
     ".nav-list li",
 );
 mobileNavbar.Init();
+function closeNavbar(){
+    let mobileMenu = document.querySelector(".mobile-menu");
+    let navList = document.querySelector(".nav-list");
+    let navLinks = document.querySelectorAll(".nav-list li");
+    mobileMenu.classList.remove("active");
+    navList.classList.remove("active");
+    navLinks.forEach((link , index)=>{
+        link.style.animation 
+        ?(link.style.animation = ""
+        )
+        :(link.style.animation =`navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
+    })
+
+}

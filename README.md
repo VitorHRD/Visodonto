@@ -1,5 +1,5 @@
 
-<h1 align="center" >Lading page Em contrução<h1>
+<h1 align="center" >Lading page Em construção<h1>
 <h2 align="center">Lading page feita para um consultório odontológico </h2>
 
 
